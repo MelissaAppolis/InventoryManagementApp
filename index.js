@@ -13,6 +13,7 @@ const app = express();
 app.use(helmet()); //securing backend with helmet.
 app.use(bodyParser.json());
 app.use(cors())
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Routes
 app.use('/users', require('./routes/users.route'));
