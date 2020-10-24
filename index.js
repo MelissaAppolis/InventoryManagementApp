@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const helmet = require("helmet");
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 require('./db.js');
 
 const app = express();
