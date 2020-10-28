@@ -35,8 +35,8 @@ passport.use(new JwtStrategy({
 
 // GOOGLE OAUTH STRATEGY
 passport.use('googleToken', new GoogleStrategy({
-    clientID: GOOGLE_CLIENTID,
-    clientSecret: GOOGLE_CLIENTSECRET
+    clientID: config.GOOGLE_CLIENTID,
+    clientSecret: config.GOOGLE_CLIENTSECRET
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         // Check whether this current user exists in our DB
@@ -64,8 +64,8 @@ passport.use('googleToken', new GoogleStrategy({
 
 // FACEBOOK STRATEGY
 passport.use('facebookToken', new FacebookTokenStrategy({
-    clientID: FACEBOOK_CLIENTID,
-    clientSecret: FACEBOOK_CLIENTSECRET
+    clientID: config.FACEBOOK_CLIENTID,
+    clientSecret: config.FACEBOOK_CLIENTSECRET
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         // Check whether this current user exists in our DB
