@@ -6,7 +6,7 @@ import { compose } from 'redux';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 
-import * as actions from '/Users/melissa/Desktop/InventoryManagementApp/client/src/actions/index.action';
+import * as actions from '../actions/index.action';
 import CustomInput from './CustomInput';
 
 // Create a login form using reduxForm.

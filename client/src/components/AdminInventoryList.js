@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { connect } from 'react-redux';
-import * as actions from '/Users/melissa/Desktop/InventoryManagementApp/client/src/actions/index.action';
+import * as actions from '../actions/index.action';
 
 
 // Creating function to dislpay the stock items within a table layout and adding an edit link and a delete button to every line item.

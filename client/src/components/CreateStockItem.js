@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import * as actions from '/Users/melissa/Desktop/InventoryManagementApp/client/src/actions/index.action';
+import * as actions from '../actions/index.action';
 
 // Import component
 import AdminInventoryList from './AdminInventoryList';

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import * as actions from '/Users/melissa/Desktop/InventoryManagementApp/client/src/actions/index.action';
+import * as actions from '../actions/index.action';
 
 
 class Navbar extends Component {

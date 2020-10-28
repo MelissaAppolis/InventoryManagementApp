@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 
-import * as actions from '/Users/melissa/Desktop/InventoryManagementApp/client/src/actions/index.action';
+import * as actions from '../actions/index.action';
 
 // creating function to dislpay the stock items within a table layout.
 const Inventory = props => (
