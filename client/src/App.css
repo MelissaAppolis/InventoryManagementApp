@@ -1,0 +1,136 @@
+.navigationBar {
+  padding: 0px;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.navbarBrandHeading {
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+.navbarInventoryLinks {
+  align-items: center;
+}
+
+.profileNavIndicator {
+  background-color: rgb(31, 83, 79);
+  padding: 5px;
+}
+
+.logoutNavItem {
+  background-color: rgb(150, 117, 26);
+  padding: 5px;
+  width: 90px;
+  text-align: center; 
+  margin-left: 0px!important;
+}
+
+
+.localLoginform {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#email, #password{
+  width: 350px;
+}
+
+#isAdmin {
+  width: 30px;
+}
+
+.loginButton {
+  background-color: rgb(116, 54, 54);
+  border: none;
+}
+
+.loginButton:hover {
+  color: rgb(116, 54, 54);
+  background-color: whitesmoke;
+}
+
+.kep-login-facebook {
+  width: 450px;
+}
+
+.googleButton {
+  width: 450px;
+  height: 60px;
+  text-align: center;
+}
+
+.inventoryList {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.inventoryListTable th {
+  text-align: left;
+  font-size: 15px;
+  background-color: rgb(90, 123, 128);
+  color: whitesmoke;
+  font-weight: 500;
+  border: none;
+}
+
+.idTableHeading {
+  text-align: center!important;
+}
+
+.idTableData {
+  text-align: center!important;
+}
+
+.costPriceTableData {
+  text-align: center!important;
+}
+
+.quantityTableData {
+  text-align: center!important;
+}
+
+.inventoryListTable td {
+  text-align: left;
+  font-size: 15px;
+}
+
+.editDeleteTableData {
+  padding: 0px!important;
+  width: 120px;
+}
+
+.editButton {
+  background-color: rgb(89, 118, 180);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: white;
+  border: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.editButton:hover {
+  color: lightgrey;
+}
+
+.deleteButton {
+  border: 0px;
+  background-color: rgb(180, 89, 89);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.deleteButton:hover {
+  color: lightgrey;
+}
