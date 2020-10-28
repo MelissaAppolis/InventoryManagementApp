@@ -9,6 +9,7 @@ module.exports = {
         facebook: {
             clientID: '1710043372493359',
             clientSecret: '9a76804eb4a564e3d10e854257f66bab'
-        }
-    }
+        },
+    },
+    mongoURI: "mongodb+srv://Melissa:melissaPassword@hyperion-dev-1234.a0z2n.mongodb.net/InventoryManagement?retryWrites=true&w=majority"
 }

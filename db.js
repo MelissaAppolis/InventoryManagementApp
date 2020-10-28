@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const db = require('./config/user.config').mongoURI;
 
 // Connect to uri - database
-mongoose.connect('mongodb+srv://Melissa:melissaPassword@hyperion-dev-1234.a0z2n.mongodb.net/InventoryManagement?retryWrites=true&w=majority',
+mongoose.connect(db,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,

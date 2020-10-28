@@ -97,6 +97,12 @@ passport.use(new LocalStrategy({
     usernameField: 'email'
 }, async (email, password, done) => {
     try {
+        // Check whether this current user exists in our DB
+        const existingUser = await User.findOne({ "local.email": email });
+        if (existingUser) {
+            return done(null, existingUser);
+        }
+
         // Find the user given the email
         const user = await User.findOne({ "local.email": email })
 
