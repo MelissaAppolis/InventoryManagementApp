@@ -4,10 +4,10 @@ const { ExtractJwt } = require('passport-jwt');
 const LocalStrategy = require('passport-local').Strategy;
 const GoogleStrategy = require('passport-token-google').Strategy;
 const FacebookTokenStrategy = require('passport-facebook-token');
-const { JWT_SECRET } = require('./config/user.config');
+const { JWT_SECRET } = require('./config/keys');
 const User = require('./models/user.model');
 const { exist } = require('joi');
-const config = require('./config/user.config');
+const config = require('./config/keys');
 
 // JSON WEB TOKENS STRATEGY
 /* Use JwtStrategy, this strategy is aware of where this token will be coming from 
@@ -35,8 +35,8 @@ passport.use(new JwtStrategy({
 
 // GOOGLE OAUTH STRATEGY
 passport.use('googleToken', new GoogleStrategy({
-    clientID: config.oauth.google.clientID,
-    clientSecret: config.oauth.google.clientSecret
+    clientID: GOOGLE_CLIENTID,
+    clientSecret: GOOGLE_CLIENTSECRET
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         // Check whether this current user exists in our DB
@@ -64,8 +64,8 @@ passport.use('googleToken', new GoogleStrategy({
 
 // FACEBOOK STRATEGY
 passport.use('facebookToken', new FacebookTokenStrategy({
-    clientID: config.oauth.facebook.clientID,
-    clientSecret: config.oauth.facebook.clientSecret
+    clientID: FACEBOOK_CLIENTID,
+    clientSecret: FACEBOOK_CLIENTSECRET
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         // Check whether this current user exists in our DB

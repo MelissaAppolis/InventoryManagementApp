@@ -1,6 +1,6 @@
 const JWT = require('jsonwebtoken');
 const User = require('../models/user.model');
-const { JWT_SECRET } = require('../config/user.config');
+const { JWT_SECRET } = require('../config/keys');
 const ROLES = require('../utils/roles');
 
 

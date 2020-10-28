@@ -1,0 +1,8 @@
+module.exports = {
+    JWT_SECRET: process.env.JWT_SEC,
+    GOOGLE_CLIENTID: process.env.GOOGLE_CLIENTID,
+    GOOGLE_CLIENTSECRET: process.env.GOOGLE_CLIENTSEC,
+    FACEBOOK_CLIENTID: process.env.FACEBOOK_CLIENTID,
+    FACEBOOK_CLIENTSECRET: process.env.FACEBOOK_CLIENTSEC,
+    MONGOURI: process.env.MONGOURI
+}

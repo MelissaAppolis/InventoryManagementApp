@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = require('./config/user.config').mongoURI;
+const db = require('./config/keys').MONGOURI;
 
 // Connect to uri - database
 mongoose.connect(db,

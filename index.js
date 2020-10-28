@@ -4,6 +4,7 @@ const helmet = require("helmet");
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
+const passport = require('passport');
 require('./db.js');
 
 const app = express();
@@ -14,13 +15,13 @@ const app = express();
 app.use(helmet()); //securing backend with helmet.
 app.use(bodyParser.json());
 app.use(cors())
-app.use(express.static(path.join(__dirname, 'client/build')));
+//app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Routes
 app.use('/users', require('./routes/users.route'));
 
 const { Inventory } = require('./models/inventory.model.js');
-const passport = require('passport');
+
 const inventoryRoutes = express.Router();
 
 app.use('/inventory', inventoryRoutes);
@@ -90,7 +91,7 @@ inventoryRoutes.route('/delete/:id').delete(function(req, res) {
 });
 
 // Serve static assets if in production
-if (process.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV == 'production'){
     // Set static folder
     app.use(express.static('client/build'));
 
