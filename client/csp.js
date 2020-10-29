@@ -7,7 +7,7 @@ module.exports = {
     ]
     },
     prod: {
-    "script-src": ['https://connect.facebook.net/en_US/sdk.js', 'https://apis.google.com/js/api.js', "'unsafe-inline'", "'unsafe-eval'"],
+    "script-src": ['https://connect.facebook.net/en_US/sdk.js', 'https://apis.google.com/js/api.js',"'unsafe-inline'", "'unsafe-eval'", "'self'"],
     "default-src": "'self'",  // can be either a string or an array.
     "style-src": [
       "'self'",
