@@ -105,8 +105,8 @@ cd into the client folder and run the command npm test
 
 Navigate to root directory (InventoryManagementApp) and run the command npm test
 
-This app is secured with Helmet for security purposes. Users passwords is stored in the database with bcrypt. Google and Facebook API Keys are stored in a config file an end user will need to add their own API KEYS to the config file. The end user will need to add their own API keys for the app to work correctly.
+This app is secured with Helmet for security purposes. Users passwords is stored in the database with bcrypt. 
+The API keys for Google, Facebook, JWT secret and MongoDB are stored in a keys file, this keys file will be used in development, however when IDIM is in production, Heroku will use the environment variables that i have stored in prod file. End users will need to add their own API keys to the config file. The end user will need to add their own API keys for the app to work correctly
 
-IDIM is deployed on Heroku. The backend and front end will deployed together.
+IDIM is deployed on Heroku. The backend and front end will be deployed together. Deploying IDIM this way will be cost effective and quite frankly, easier to deploy as the app will share one server.
 
-Deploy link

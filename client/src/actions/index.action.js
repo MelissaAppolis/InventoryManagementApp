@@ -5,7 +5,7 @@ import { AUTH_LOGIN, AUTH_SIGN_OUT, AUTH_ERROR, SET_ADMIN_PRIVILEGES } from './t
 // Using axios to add a users' credentials
 export const oauthGoogle = data => {
     return async dispatch => {
-        const res = await axios.post('http://localhost:3001/users/oauth/google', {
+        const res = await axios.post('https://inventory-app-idim.herokuapp.com/users/oauth/google', {
             access_token: data
         })
         dispatch({
@@ -21,7 +21,7 @@ export const oauthGoogle = data => {
 // Using axios to add a users' credentials
 export const oauthFacebook = data => {
     return async dispatch => {
-        const res = await axios.post('http://localhost:3001/users/oauth/facebook', {
+        const res = await axios.post('https://inventory-app-idim.herokuapp.com/users/oauth/facebook', {
             access_token: data
         })
         dispatch({
@@ -43,7 +43,7 @@ export const login = data => {
     // Save the jwtToken into our localStorage.
     return async dispatch  => {
         try {
-            const res = await axios.post('http://localhost:3001/users/login', data)
+            const res = await axios.post('https://inventory-app-idim.herokuapp.com/users/login', data)
 
             dispatch({
                 type: AUTH_LOGIN,
