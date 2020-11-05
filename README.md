@@ -4,6 +4,23 @@
 
 Interior Design Inventory Management (IDIM) is a web application that stores all inventory items in a interior design company's warehouse to easily manage stock. IDIM will give access to users to track items that are stored in the warehouse. Admin will be allowed to track, add, update and delete items from the inventory list. A normal user will only be able to track the inventory list.
 
+## Table of Contents
+* [Introduction](#introduction)
+* [System Architecture](#system-architecture)
+* [System Requirements](#system-requirements)
+* [Functional Requirements](#functional-requirements)
+* [Non-Functional Requirements](#non-functional-requirements)
+* [User Stories](#user-stories)
+* [Similiar Inventory Management Softwares](#similiar-inventory-management-softwares)
+* [Unique Features](#unique-features)
+* [Instruction on how to use IDIM](#instruction-on-how-to-use-IDIM)
+* [Installation](#installation)
+* [Run full stack application](#run-full-stack-application)
+* [Test](#test)
+* [Security](#security)
+* [Deployment](#deployment)
+
+
 ## System Architecture
 
 IDIM will be using mainly Javascript to code the application and thus, will be using MERN (MongoDB, Express.js, React.js and Node.js) stack to build the application. MERN stack is the ideal approach to working with Javascript and JSON.
@@ -63,13 +80,37 @@ IDIM will be used by Interior Design companies to create and track their invento
 
 ## Instruction on how to use IDIM
 
-The app is based on user access control. A user is limited to only viewing the inventory list and an admin is able to view the inventory list, create a stock item and update or delete a stock item from the inventory list.
+The app is based on user access control. A normal user is limited to only viewing the inventory list and an admin is able to view the inventory list, create a stock item and update or delete a stock item from the inventory list.
 
-To login as a user just add a username and password of your choice or login via your Facebook or Google account.
+### Landing Page
+The landing page displays the login form.
 
+![Landing Page Image](screenshots/screenshot1.png)
+
+### User Login
+To login as a normal user just add a username and password of your choice or login via your Facebook or Google account.
+
+![Login as Normal User Image](screenshots/screenshot5.png)
+
+### Admin Login
 To login as an admin type in your username and password and select the admin checkbox.
 
+![Login as Admin Image](screenshots/screenshot7.png)
+
+### Admin Access
 If you are authenticated as admin you will be redirected to the admin inventory list where you can view all the stock items and edit or delete a stock item. You are also able to access the add stock item form.
+
+![Admin Access Image 1](screenshots/screenshot2.png)
+
+![Admin Access Image 2](screenshots/screenshot3.png)
+
+![Admin Access Image 3](screenshots/screenshot4.png)
+
+### User Access
+If you authenticated as a user you will only have access to view the inventory list
+
+![User Access Image](screenshots/screenshot6.png)
+
 
 ## Installation
 
@@ -105,8 +146,12 @@ cd into the client folder and run the command npm test
 
 Navigate to root directory (InventoryManagementApp) and run the command npm test
 
+## Security
+
 This app is secured with Helmet for security purposes. Users passwords is stored in the database with bcrypt. 
 The API keys for Google, Facebook, JWT secret and MongoDB are stored in a keys file, this keys file will be used in development, however when IDIM is in production, Heroku will use the environment variables that i have stored in prod file. End users will need to add their own API keys to the config file. The end user will need to add their own API keys for the app to work correctly
+
+## Deployment
 
 IDIM is deployed on Heroku. The backend and front end will be deployed together. Deploying IDIM this way will be cost effective and quite frankly, easier to deploy as the app will share one server.
 
